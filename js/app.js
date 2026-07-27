@@ -63,11 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
      ===================================================== */
 
   const groupLabels = {
-    "5F": "500",
-    "6F": "600",
-    "7F": "700",
+    "5F": "500(main bild)",
+    "6F": "600(annex)",
+    "7F": "700(annex)",
     "LOG": "LOG",
-    "共用部": "共用部"
+    "共用部": "共用部(Common area)"
   };
 
 
