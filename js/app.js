@@ -427,7 +427,10 @@ document.addEventListener("DOMContentLoaded", function () {
       button.type = "button";
       button.className = "tab-button";
       button.dataset.section = tab.key;
-      button.textContent = tab.label;
+      button.innerHTML = `
+  <span class="tab-ja">${escapeHTML(tab.label)}</span>
+  <span class="tab-en">${escapeHTML(tab.english || "")}</span>
+`;
 
       if (index === 0) {
         button.classList.add("active");
