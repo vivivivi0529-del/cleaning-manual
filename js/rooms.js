@@ -54,11 +54,6 @@ const rooms = {
         photos: []
       },
 
-      faq: {
-        title: "FAQ",
-        text: "501号室のFAQをここに入力してください。",
-        photos: []
-      }
     }
   },
 
