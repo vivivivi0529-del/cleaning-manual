@@ -404,4 +404,207 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buildManualTabs();
 
-    showSection
+    showSection("complete");
+  }
+
+
+  /* =====================================================
+     MANUAL TABS
+     ===================================================== */
+
+  function buildManualTabs() {
+
+    if (!manualTabsContainer) {
+      return;
+    }
+
+    manualTabsContainer.innerHTML = "";
+
+    manualTabs.forEach(function (tab, index) {
+
+      const button = document.createElement("button");
+
+      button.type = "button";
+      button.className = "tab-button";
+      button.dataset.section = tab.key;
+      button.textContent = tab.label;
+
+      if (index === 0) {
+        button.classList.add("active");
+      }
+
+      button.addEventListener("click", function () {
+
+        showSection(tab.key);
+
+        const buttons =
+          manualTabsContainer.querySelectorAll(".tab-button");
+
+        buttons.forEach(function (item) {
+          item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+      });
+
+      manualTabsContainer.appendChild(button);
+
+    });
+  }
+
+
+  /* =====================================================
+     SHOW SECTION
+     ===================================================== */
+
+  function showSection(sectionKey) {
+
+    if (!currentRoom) {
+      return;
+    }
+
+    const section = currentRoom.sections[sectionKey];
+
+    if (!section) {
+
+      if (sectionTitle) {
+        sectionTitle.textContent = "";
+      }
+
+      if (manualText) {
+        manualText.textContent = "情報が登録されていません。";
+      }
+
+      if (photoGrid) {
+        photoGrid.innerHTML = "";
+      }
+
+      return;
+    }
+
+    if (sectionTitle) {
+      sectionTitle.textContent = section.title;
+    }
+
+    if (manualText) {
+
+      if (
+        section.text !== undefined &&
+        section.text !== null &&
+        String(section.text).trim() !== ""
+      ) {
+
+        manualText.innerHTML =
+          formatText(String(section.text));
+
+      } else {
+
+        manualText.textContent =
+          "説明はまだ登録されていません。";
+
+      }
+    }
+
+    buildPhotos(section.photos);
+  }
+
+
+  /* =====================================================
+     PHOTOS
+     ===================================================== */
+
+  function buildPhotos(photos) {
+
+    if (!photoGrid) {
+      return;
+    }
+
+    photoGrid.innerHTML = "";
+
+    if (!Array.isArray(photos) || photos.length === 0) {
+      return;
+    }
+
+    photos.forEach(function (photo, index) {
+
+      let src = "";
+      let alt = "";
+
+      if (typeof photo === "string") {
+
+        src = photo;
+
+        alt =
+          currentRoom.name +
+          " " +
+          (sectionTitle ? sectionTitle.textContent : "") +
+          " " +
+          (index + 1);
+
+      } else if (photo && typeof photo === "object") {
+
+        src = photo.src || "";
+
+        alt =
+          photo.alt ||
+          currentRoom.name + " 写真 " + (index + 1);
+      }
+
+      if (!src) {
+        return;
+      }
+
+      const img = document.createElement("img");
+
+      img.src = src;
+      img.alt = alt;
+      img.className = "manual-photo";
+      img.loading = "lazy";
+
+      img.addEventListener("error", function () {
+        img.remove();
+      });
+
+      photoGrid.appendChild(img);
+    });
+  }
+
+
+  /* =====================================================
+     TEXT FORMAT
+     ===================================================== */
+
+  function formatText(text) {
+
+    return escapeHTML(text)
+      .replace(/\r\n/g, "\n")
+      .replace(/\r/g, "\n")
+      .replace(/\n/g, "<br>");
+  }
+
+
+  /* =====================================================
+     HTML ESCAPE
+     ===================================================== */
+
+  function escapeHTML(value) {
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+
+  /* =====================================================
+     INITIALIZE
+     ===================================================== */
+
+  buildSidebar();
+  buildHomePage();
+  buildRoomPage();
+
+});
