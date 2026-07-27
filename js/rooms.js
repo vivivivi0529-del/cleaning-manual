@@ -20,6 +20,7 @@ const rooms = {
     sections: {
       complete: {
         title: "完成写真",
+        text: " ",
         photos: [
           "95BB6B67-B971-4249-80FD-07047AB57FE7.png"
         ]
