@@ -268,27 +268,33 @@ const rooms = {
 const manualTabs = [
   {
     key: "complete",
-    label: "完成写真"
+    label: "完成写真",
+    english: "Completed"
   },
-    {
+  {
     key: "cleaning",
-    label: "清掃方法"
+    label: "清掃方法",
+    english: "Cleaning"
   },
-    {
+  {
     key: "bed",
-    label: "ベッドメイク"
+    label: "ベッドメイク",
+    english: "Bed Making"
   },
-    {
+  {
     key: "supplies",
-    label: "備品配置"
+    label: "備品配置",
+    english: "Supplies"
   },
   {
     key: "notice",
-    label: "注意事項"
+    label: "注意事項",
+    english: "Notes"
   },
   {
     key: "equipment",
-    label: "設備情報"
+    label: "設備情報",
+    english: "Equipment"
   }
 ];
 
