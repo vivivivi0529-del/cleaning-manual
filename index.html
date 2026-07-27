@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ホテル客室マニュアル</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <button id="menuBtn" type="button" aria-label="メニューを開く">
+      ☰
+    </button>
+
+    <h1>ホテル客室マニュアル</h1>
+  </header>
+
+  <div class="container">
+
+    <nav id="sidebar" aria-label="客室ナビゲーション"></nav>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <main id="content">
+
+      <div class="page-shell">
+
+        <h2 class="page-title">
+          客室・エリア一覧
+        </h2>
+
+        <p class="page-description">
+          確認したい客室・エリアを選択してください。
+        </p>
+
+        <div id="roomList"></div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="js/rooms.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
