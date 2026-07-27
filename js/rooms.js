@@ -287,10 +287,6 @@ const manualTabs = [
   {
     key: "equipment",
     label: "設備情報"
-  },
-  {
-    key: "faq",
-    label: "FAQ"
   }
 ];
 
