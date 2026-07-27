@@ -33,7 +33,7 @@ const rooms = {
       cleaning: {
         title: "清掃方法",
         text: "501号室の清掃方法をここに入力してください。",
-        photos: ["0F914652-225F-4DAD-ABFB-796F7D58A32E.png"]
+        photos: ["images/501/0F914652-225F-4DAD-ABFB-796F7D58A32E.png"]
       },
 
       bed: {
