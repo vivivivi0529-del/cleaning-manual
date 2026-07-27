@@ -231,25 +231,25 @@ const rooms = {
      ========================= */
 
   "lobby": {
-    name: "ロビー",
+    name: "Lobby",
     group: "共用部",
     sections: {}
   },
 
   "entrance": {
-    name: "エントランス",
+    name: "Entrance",
     group: "共用部",
     sections: {}
   },
 
   "terrace": {
-    name: "テラス",
+    name: "Terrace",
     group: "共用部",
     sections: {}
   },
 
   "corridor": {
-    name: "中通路",
+    name: "corridor",
     group: "共用部",
     sections: {}
   }
@@ -270,21 +270,21 @@ const manualTabs = [
     key: "complete",
     label: "完成写真"
   },
-  {
-    key: "notice",
-    label: "注意事項"
-  },
-  {
+    {
     key: "cleaning",
     label: "清掃方法"
   },
-  {
+    {
     key: "bed",
     label: "ベッドメイク"
   },
-  {
+    {
     key: "supplies",
     label: "備品配置"
+  },
+  {
+    key: "notice",
+    label: "注意事項"
   },
   {
     key: "equipment",
