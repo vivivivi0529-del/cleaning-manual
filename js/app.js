@@ -501,7 +501,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
 
         manualText.textContent =
-          "説明はまだ登録されていません。";
+          "　";
 
       }
     }
