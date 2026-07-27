@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
      ===================================================== */
 
   const groupOrder = [
-    "5F",
-    "6F",
-    "7F",
+    "500",
+    "600",
+    "700",
     "LOG",
     "共用部"
   ];
