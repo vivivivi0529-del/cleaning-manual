@@ -2,9 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Hotel Manual</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ホテル客室マニュアル</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,76 +11,31 @@
 
 <body>
 
-<div class="wrapper">
+<header class="topbar">
 
-<aside class="sidebar">
-
-<h2>🏨 客室マニュアル</h2>
-
-<ul>
-
-<li><a href="index.html">🏠 ホーム</a></li>
-
-<li class="title">5F</li>
-
-<li><a href="501.html">501</a></li>
-<li><a href="502.html">502</a></li>
-<li><a href="505.html">505</a></li>
-<li><a href="507.html">507</a></li>
-<li><a href="508.html">508</a></li>
-<li><a href="509.html">509</a></li>
-<li><a href="510.html">510</a></li>
-
-<li class="title">6F</li>
-
-<li><a href="602.html">602</a></li>
-<li><a href="603.html">603</a></li>
-<li><a href="605.html">605</a></li>
-<li><a href="607.html">607</a></li>
-<li><a href="608.html">608</a></li>
-<li><a href="609.html">609</a></li>
-<li><a href="610.html">610</a></li>
-<li><a href="611.html">611</a></li>
-
-<li class="title">7F</li>
-
-<li><a href="701.html">701</a></li>
-<li><a href="704.html">704</a></li>
-<li><a href="705.html">705</a></li>
-<li><a href="708.html">708</a></li>
-<li><a href="709.html">709</a></li>
-<li><a href="710.html">710</a></li>
-<li><a href="711.html">711</a></li>
-
-<li class="title">LOG HOUSE</li>
-
-<li><a href="loga.html">LOG A</a></li>
-<li><a href="logb.html">LOG B</a></li>
-<li><a href="logc.html">LOG C</a></li>
-<li><a href="logd.html">LOG D</a></li>
-
-<li class="title">共用部</li>
-
-<li><a href="lobby.html">ロビー</a></li>
-<li><a href="entrance.html">エントランス</a></li>
-<li><a href="terrace.html">テラス</a></li>
-<li><a href="corridor.html">中通路</a></li>
-
-</ul>
-
-</aside>
-
-<main class="content">
+<button id="menuBtn">☰</button>
 
 <h1>ホテル客室マニュアル</h1>
 
-<p>
-部屋を選択してください。
-</p>
+</header>
+
+<div class="container">
+
+<nav id="sidebar"></nav>
+
+<main id="content">
+
+<h2>客室一覧</h2>
+
+<div id="roomList"></div>
 
 </main>
 
 </div>
 
+<script src="js/rooms.js"></script>
+<script src="js/app.js"></script>
+
 </body>
+
 </html>
