@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>客室マニュアル</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <button
+      id="menuBtn"
+      type="button"
+      aria-label="メニューを開く"
+    >
+      ☰
+    </button>
+
+    <h1 id="roomTitle">
+      ホテル客室マニュアル
+    </h1>
+
+  </header>
+
+
+  <div class="container">
+
+    <!--
+      全ページ共通ナビゲーション。
+      内容は app.js が rooms.js から自動生成します。
+    -->
+
+    <nav
+      id="sidebar"
+      aria-label="客室ナビゲーション"
+    ></nav>
+
+
+    <!--
+      スマートフォンでメニューを開いた時の背景。
+    -->
+
+    <div
+      id="menuOverlay"
+      class="menu-overlay"
+    ></div>
+
+
+    <main id="content">
+
+      <div class="room-panel">
+
+        <!-- 部屋タイトル -->
+
+        <div class="room-heading">
+
+          <h2 id="roomName">
+            読み込み中...
+          </h2>
+
+          <div
+            id="roomCategory"
+            class="room-category"
+          ></div>
+
+        </div>
+
+
+        <!--
+          マニュアル本体
+
+          写真
+          ↓
+          説明
+          ↓
+          タブ
+
+          の順番です。
+        -->
+
+        <article class="manual-card">
+
+          <div class="manual-content">
+
+            <!-- 現在選択中の項目名 -->
+
+            <h3 id="sectionTitle">
+              完成写真
+            </h3>
+
+
+            <!-- 写真 -->
+
+            <div
+              id="photoGrid"
+              class="photo-grid"
+            ></div>
+
+
+            <!-- 説明 -->
+
+            <div
+              id="manualText"
+              class="manual-text"
+            >
+              読み込み中...
+            </div>
+
+          </div>
+
+
+          <!-- タブ -->
+
+          <nav
+            id="manualTabs"
+            class="manual-tabs"
+            aria-label="マニュアル項目"
+          ></nav>
+
+        </article>
+
+
+        <!--
+          room指定が間違っている場合などに
+          app.jsからここへエラーを表示します。
+        -->
+
+        <div
+          id="roomError"
+          class="error-message"
+          hidden
+        ></div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+
+  <!--
+    rooms.jsを先に読み込み、
+    そのデータをapp.jsが利用します。
+  -->
+
+  <script src="js/rooms.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
