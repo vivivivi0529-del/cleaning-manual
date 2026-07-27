@@ -21,9 +21,7 @@ const rooms = {
       complete: {
         title: "完成写真",
         text: " ",
-        photos: [
-          "95BB6B67-B971-4249-80FD-07047AB57FE7.png"
-        ]
+        photos: [images/501/10A1F945-E77C-419E-BBB2-123A2749C8F2.png]
       },
 
       notice: {
@@ -35,13 +33,13 @@ const rooms = {
       cleaning: {
         title: "清掃方法",
         text: "501号室の清掃方法をここに入力してください。",
-        photos: []
+        photos: [0F914652-225F-4DAD-ABFB-796F7D58A32E.png]
       },
 
       bed: {
         title: "ベッドメイク",
         text: "501号室のベッドメイク方法をここに入力してください。",
-        photos: []
+        photos: [images/501/50BAEFF8-8E56-454F-8ECF-FCF2606BCF6C.png]
       },
 
       supplies: {
