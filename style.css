@@ -650,4 +650,24 @@ img {
     font-size: 15px;
   }
 }
+.tab-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1px;
+  line-height: 1.05;
+}
+
+.tab-ja {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tab-en {
+  font-size: 9px;
+  font-weight: 500;
+  opacity: 0.72;
+}
     
