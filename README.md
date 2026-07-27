@@ -1,5 +1,4 @@
-# cleaning-manual
-sample
+style.css
 
 /*
 Theme Name: Hotel Room Manual
