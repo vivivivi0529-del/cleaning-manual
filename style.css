@@ -384,9 +384,9 @@ img {
 
 .manual-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
-
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  display: block;
 
   border: 1px solid var(--border);
   border-radius: 10px;
