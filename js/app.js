@@ -301,4 +301,107 @@ document.addEventListener("DOMContentLoaded", function () {
             ${escapeHTML(displayGroup)}
           </h3>
 
-          <div
+          <div class="room-grid">
+      `;
+
+
+      groupRooms.forEach(function (item) {
+
+        html += `
+          <a
+            class="room-card"
+            href="room.html?room=${encodeURIComponent(item.id)}"
+          >
+            ${escapeHTML(item.data.name)}
+          </a>
+        `;
+
+      });
+
+
+      html += `
+          </div>
+
+        </section>
+      `;
+
+    });
+
+
+    roomList.innerHTML = html;
+  }
+
+
+  /* =====================================================
+     ROOM PAGE
+     ===================================================== */
+
+  function buildRoomPage() {
+
+    if (!roomName) {
+      return;
+    }
+
+
+    if (!currentRoom) {
+
+      roomName.textContent =
+        "ページが見つかりません";
+
+
+      if (roomCategory) {
+        roomCategory.textContent = "";
+      }
+
+
+      const manualCard =
+        document.querySelector(".manual-card");
+
+
+      if (manualCard) {
+        manualCard.style.display = "none";
+      }
+
+
+      if (roomError) {
+
+        roomError.hidden = false;
+
+        roomError.innerHTML =
+          '指定された客室・エリアが見つかりません。<br><a href="index.html">ホームへ戻る</a>';
+
+      }
+
+      return;
+    }
+
+
+    /* ページタイトル */
+
+    document.title =
+      currentRoom.name +
+      " | ホテル客室マニュアル";
+
+
+    if (roomTitle) {
+      roomTitle.textContent =
+        currentRoom.name;
+    }
+
+
+    roomName.textContent =
+      currentRoom.name;
+
+
+    if (roomCategory) {
+
+      roomCategory.textContent =
+        groupLabels[currentRoom.group]
+        || currentRoom.group;
+
+    }
+
+
+    buildManualTabs();
+
+    showSection
