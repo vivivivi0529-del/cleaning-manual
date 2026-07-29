@@ -106,11 +106,68 @@ const rooms = {
         photos: ["images/501/50BAEFF8-8E56-454F-8ECF-FCF2606BCF6C.png"]
       },
 
-      supplies: {
-        title: "備品配置",
-        text: "501号室の備品配置をここに入力してください。",
-        photos: []
-      },
+     supplies: {
+    title: "備品配置(基本的に全て人数分)",
+
+    contents: [
+        {
+            text: "デスク",
+            photos: [
+                "images/501/item_desk.heic"
+            ],
+            note: "お菓子は各種人数分"
+        },
+        {
+            text: "アメニティ",
+            photos: [
+                "images/501/item_amenity.HEIC"
+            ],
+            note: "歯ブラシ、コットン、ヘアブラシ、ヒゲソリ、シェービングジェル、ヘアバンド、ヘアキャップ\nヒゲソリ、シェービングジェルは2人につき1セット"
+        },
+        {
+            text: "ソープ",
+            photos: [
+                "images/501/item_soap.heic"
+            ],
+            note: "左からボディソープ、シャンプー、コンディショナー\nバスソルトは2色でデラックスとスイートのみ設置"
+        },
+        {
+            text: "ローション",
+            photos: [
+                "images/501/item_lotions.heic"
+            ],
+            note: "左からハンドバーム、エマルジョン、ローション、フェイスウォッシュ、クレンジング\nデラックスとスイートのみに設置"
+        },
+        {
+            text: "タオル",
+            photos: [
+                "images/501/item_towel.heic"
+            ],
+            note: "左がバスタオル、右にフェイスタオル、フェイスタオルの前にボディタオル"
+        },
+        {
+            text: "ローブ",
+            photos: [
+                "images/501/item_robe.HEIC"
+            ],
+            note: "パジャマ、ローブ共に大小あり\n各種大小設置"
+        },
+        {
+            text: "ドリンク",
+            photos: [
+                "images/501/item_drink.heic"
+            ],
+            note: "コーヒーセット(コーヒー、マドラー、シュガー、フレッシュ)\n冷蔵庫(アサヒ×2 コーラ×1 コーラゼロ×1 エビアン×1 スパークリング×1 リンゴジュース×2)"
+        },
+        {
+            text: "クローゼット",
+            photos: [
+                "images/501/item_closet.HEIC"
+            ],
+            note: "スリッパ、殺虫剤、懐中電灯、靴べら\nハンガーは片方に寄せる"
+        }
+    ]
+},
 
       equipment: {
         title: "設備情報",
