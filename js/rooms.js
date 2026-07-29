@@ -27,11 +27,12 @@ const rooms = {
         "images/501/completed_1.HEIC"
       ]
     },
-      text: "客室全体2",
-      photos: [
+{
+    text: "客室全体2",
+    photos: [
         "images/501/completed_2.HEIC"
-      ]
-    },
+    ]
+},
     {
       text: "バスルーム",
       photos: [
