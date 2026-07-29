@@ -69,31 +69,31 @@ const rooms = {
     title: "清掃方法",
     contents: [
         {
-            text: "換気・引き出しや棚の中のチェック（忘れ物確認）",
+            text: "① 換気・引き出しや棚の中のチェック（忘れ物確認）",
             photos: [
                 "images/501/cleaning_1.PNG"
             ]
         },
         {
-            text: "ゴミ・シーツ・タオル類など使用済みの物の回収",
+            text: "② ゴミ・シーツ・タオル類など使用済みの物の回収",
             photos: [
                 "images/501/cleaning_2.PNG"
             ]
         },
         {
-            text: "バスルーム・ジャグジー・シャワールームの清掃",
+            text: "③ バスルーム・ジャグジー・シャワールームの清掃",
             photos: [
                 "images/501/cleaning_3.PNG"
             ]
         },
         {
-            text: "窓・鏡・デスク・照明などアルコールを使用して拭き清掃",
+            text: "④ 窓・鏡・デスク・照明などアルコールを使用して拭き清掃",
             photos: [
                 "images/501/cleaning_4.PNG"
             ]
         },
         {
-            text: "部屋の隅々まで掃除機をかける",
+            text: "⑤ 部屋の隅々まで掃除機をかける",
             photos: [
                 "images/501/cleaning_5.PNG"
             ]
