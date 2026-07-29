@@ -19,10 +19,45 @@ const rooms = {
 
     sections: {
       complete: {
-        title: "完成写真",
-        text: " ",
-        photos: ["images/501/10A1F945-E77C-419E-BBB2-123A2749C8F2.png"]
-      },
+  title: "完成写真",
+  contents: [
+    {
+      text: "客室全体",
+      photos: [
+        "images/501/501_complete_01.png"
+      ]
+    },
+      text: "客室全体2",
+      photos: [
+        "images/501/501_complete_01.png"
+      ]
+    },
+    {
+      text: "ベッド",
+      photos: [
+        "images/501/501_complete_02.png"
+      ]
+    },
+    {
+      text: "洗面所",
+      photos: [
+        "images/501/501_complete_03.png"
+      ]
+    },
+    {
+      text: "バスルーム",
+      photos: [
+        "images/501/501_complete_04.png"
+      ]
+    },
+    {
+      text: "トイレ",
+      photos: [
+        "images/501/501_complete_05.png"
+      ]
+    }
+  ]
+},
 
       notice: {
         title: "注意事項",
