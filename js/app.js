@@ -509,7 +509,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
+photoGrid.innerHTML = "";
+
+if (Array.isArray(section.contents)) {
+
+    buildContents(section.contents);
+
+} else {
+
     buildPhotos(section.photos);
+
+}
   }
 
 
@@ -572,6 +582,46 @@ document.addEventListener("DOMContentLoaded", function () {
       photoGrid.appendChild(img);
     });
   }
+  function buildContents(contents) {
+
+    if (!photoGrid) return;
+
+    photoGrid.innerHTML = "";
+
+    if (!Array.isArray(contents)) return;
+
+    contents.forEach(function(item) {
+
+        if (item.text) {
+
+            const title = document.createElement("h4");
+            title.className = "manual-subtitle";
+            title.textContent = item.text;
+
+            photoGrid.appendChild(title);
+
+        }
+
+        if (Array.isArray(item.photos)) {
+
+            item.photos.forEach(function(photo) {
+
+                const img = document.createElement("img");
+
+                img.src = photo;
+                img.alt = item.text || "";
+                img.className = "manual-photo";
+                img.loading = "lazy";
+
+                photoGrid.appendChild(img);
+
+            });
+
+        }
+
+    });
+
+}
 
 
   /* =====================================================
