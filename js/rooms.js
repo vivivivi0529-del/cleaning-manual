@@ -24,36 +24,36 @@ const rooms = {
     {
       text: "客室全体",
       photos: [
-        "images/501/501_complete_01.png"
+        "images/501/completed_1.HEIC"
       ]
     },
       text: "客室全体2",
       photos: [
-        "images/501/501_complete_01.png"
-      ]
-    },
-    {
-      text: "ベッド",
-      photos: [
-        "images/501/501_complete_02.png"
-      ]
-    },
-    {
-      text: "洗面所",
-      photos: [
-        "images/501/501_complete_03.png"
+        "images/501/completed_2.HEIC"
       ]
     },
     {
       text: "バスルーム",
       photos: [
-        "images/501/501_complete_04.png"
+        "images/501/completed_3.HEIC"
+      ]
+    },
+    {
+      text: "洗面所",
+      photos: [
+        "images/501/completed_4.HEIC"
+      ]
+    },
+    {
+      text: "ベッド",
+      photos: [
+        "images/501/completed_5.HEIC"
       ]
     },
     {
       text: "トイレ",
       photos: [
-        "images/501/501_complete_05.png"
+        "images/501/completed_6.HEIC"
       ]
     }
   ]
