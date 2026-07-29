@@ -69,31 +69,31 @@ const rooms = {
     title: "清掃方法",
     contents: [
         {
-            text: "① 換気・引き出しや棚の中のチェック（忘れ物確認）",
+            text: " ",
             photos: [
                 "images/501/cleaning_1.PNG"
             ]
         },
         {
-            text: "② ゴミ・シーツ・タオル類など使用済みの物の回収",
+            text: " ",
             photos: [
                 "images/501/cleaning_2.PNG"
             ]
         },
         {
-            text: "③ バスルーム・ジャグジー・シャワールームの清掃",
+            text: " ",
             photos: [
                 "images/501/cleaning_3.PNG"
             ]
         },
         {
-            text: "④ 窓・鏡・デスク・照明などアルコールを使用して拭き清掃",
+            text: " ",
             photos: [
                 "images/501/cleaning_4.PNG"
             ]
         },
         {
-            text: "⑤ 部屋の隅々まで掃除機をかける",
+            text: " ",
             photos: [
                 "images/501/cleaning_5.PNG"
             ]
@@ -102,7 +102,7 @@ const rooms = {
 },
       bed: {
         title: "ベッドメイク",
-        text: "501号室のベッドメイク方法をここに入力してください。",
+        text: "画像だと分かりにくいので後に埋め込み動画にする予定。",
         photos: ["images/501/50BAEFF8-8E56-454F-8ECF-FCF2606BCF6C.png"]
       },
 
