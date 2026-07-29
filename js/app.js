@@ -592,16 +592,20 @@ if (Array.isArray(section.contents)) {
 
     contents.forEach(function(item) {
 
+        // 見出し
         if (item.text) {
 
             const title = document.createElement("h4");
+
             title.className = "manual-subtitle";
+
             title.textContent = item.text;
 
             photoGrid.appendChild(title);
 
         }
 
+        // 画像
         if (Array.isArray(item.photos)) {
 
             item.photos.forEach(function(photo) {
@@ -609,13 +613,33 @@ if (Array.isArray(section.contents)) {
                 const img = document.createElement("img");
 
                 img.src = photo;
+
                 img.alt = item.text || "";
+
                 img.className = "manual-photo";
+
                 img.loading = "lazy";
+
+                img.addEventListener("error", function() {
+                    img.remove();
+                });
 
                 photoGrid.appendChild(img);
 
             });
+
+        }
+
+        // 脚注
+        if (item.note) {
+
+            const note = document.createElement("p");
+
+            note.className = "manual-note";
+
+            note.textContent = item.note;
+
+            photoGrid.appendChild(note);
 
         }
 
