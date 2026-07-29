@@ -62,7 +62,7 @@ const rooms = {
 
       notice: {
         title: "注意事項",
-        text: "501号室の注意事項をここに入力してください。",
+        text: "・観葉植物の水やり\n・ベランダの落ち葉や虫の死骸\n空調の設定温度確認\n洗面台にフェイスタオルとハンドタオル設置\n",
         photos: []
       },
      cleaning: {
@@ -115,7 +115,7 @@ const rooms = {
             photos: [
                 "images/501/item_desk.heic"
             ],
-            note: "お菓子は各種人数分"
+            note: "お菓子は各種人数分\nインフォメーションを開いて中身確認"
         },
         {
             text: "アメニティ",
@@ -125,35 +125,35 @@ const rooms = {
             note: "歯ブラシ、コットン、ヘアブラシ、ヒゲソリ、シェービングジェル、ヘアバンド、ヘアキャップ\nヒゲソリ、シェービングジェルは2人につき1セット"
         },
         {
-            text: "ソープ",
+            text: "ソープ類",
             photos: [
                 "images/501/item_soap.heic"
             ],
             note: "左からボディソープ、シャンプー、コンディショナー\nバスソルトは2色でデラックスとスイートのみ設置"
         },
         {
-            text: "ローション",
+            text: "ローション類",
             photos: [
                 "images/501/item_lotions.heic"
             ],
             note: "左からハンドバーム、エマルジョン、ローション、フェイスウォッシュ、クレンジング\nデラックスとスイートのみに設置"
         },
         {
-            text: "タオル",
+            text: "タオル類",
             photos: [
                 "images/501/item_towel.heic"
             ],
-            note: "左がバスタオル、右にフェイスタオル、フェイスタオルの前にボディタオル"
+            note: "左がバスタオル、右にフェイスタオル、フェイスタオルの前にボディタオル\nバスマット2枚を重ねて浴槽の端に掛ける"
         },
         {
-            text: "ローブ",
+            text: "パジャマ・バスローブ",
             photos: [
                 "images/501/item_robe.HEIC"
             ],
             note: "パジャマ、ローブ共に大小あり\n各種大小設置"
         },
         {
-            text: "ドリンク",
+            text: "ドリンク類",
             photos: [
                 "images/501/item_drink.heic"
             ],
@@ -171,7 +171,7 @@ const rooms = {
 
       equipment: {
         title: "設備情報",
-        text: "501号室の設備情報をここに入力してください。",
+        text: "唯一神Mr.Ryoを召喚しターンエンド",
         photos: []
       },
 
